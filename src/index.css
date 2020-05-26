@@ -1,13 +1,53 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.cardHolder{
+  column-count: 4;
+  column-gap: 10px;
+}
+
+.dogcard{
+  width: 100%;
+  display: inline-block;
+  margin: 5px 0px;
+  background-color: #eaeae8;
+}
+
+.doggyName{
+  font-size: 15px;
+}
+
+.downBtn{
+  color: #ee0979;
+}
+
+.header{
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+}
+
+.banner{
+  background-color: #eaeae8;
+}
+
+.bannertxt{
+  font-size: 40px;
+  color: #ee0979;
+}
+
+@media screen and (max-width:600px){
+  .cardHolder{
+    column-count: 2;
+    column-gap: 5px;
+  }
+  .dogcard{
+    margin: 3px 0px;
+  }
+  .bannertxt{
+    font-size: 20px;
+  }
+  .doggyName{
+    font-size: 10px;
+  }
 }
