@@ -36,6 +36,10 @@ body {
   color: #ee0979;
 }
 
+.modal-content{
+  background-color: #eaeae8;
+}
+
 @media screen and (max-width:600px){
   .cardHolder{
     column-count: 2;
