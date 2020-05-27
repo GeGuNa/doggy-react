@@ -14,7 +14,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Banner/>
-                <div className="py-4 cardHolder">
+                <div className="py-3 cardHolder">
                     {
                         this.props.breeds.map((breed,i)=>(
                             <DogCard key={i} breed={breed} />

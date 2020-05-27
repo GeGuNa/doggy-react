@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import PopUp from './PopUp';
 
 export default class DogCard extends Component {
 
@@ -29,12 +30,15 @@ export default class DogCard extends Component {
                 <img src={this.state.dogImg} alt={breed} className="w-100" />
                 <div className="text-secondary doggyName my-2 px-3">
                     {breed.toUpperCase()}
+                    
                     <span className="float-right">
-                        <a href={this.state.dogImg} download>
+                        <a href={this.state.dogImg} className="tooltip-test" title="Download Image" download>
                             <i className="fa fa-download downBtn"></i>
                         </a>
                     </span>
+                    <PopUp breed={this.props.breed} imgUrl={this.state.dogImg} />
                 </div>
+                
             </div>
         )
     }
