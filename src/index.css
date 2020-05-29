@@ -1,71 +1,83 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
-.cardHolder{
+.cardHolder {
   column-count: 4;
   column-gap: 10px;
 }
 
-.dogcard{
+.dogcard {
   width: 100%;
   display: inline-block;
   margin: 5px 0px;
   background-color: #eaeae8;
 }
 
-.doggyName{
+.doggyName {
   font-size: 15px;
   padding: 5px 10px;
 }
 
-.plusBtn{
+.plusBtn {
   color: #fc466b;
 }
 
-.downBtn{
+.downBtn {
   color: #3f5efb;
 }
 
-.header{
+.header {
   background: linear-gradient(to right, #fc466b, #3f5efb);
 }
 
-.banner{
+.brandLogo {
+  font-family: "Billabong", normal;
+  
+}
+
+@font-face {
+  font-family: 'Billabong';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./assets/billabong/Billabong.woff') format('woff');
+  }
+
+.banner {
   background-color: #eaeae8;
 }
 
-.bannertxt{
+.bannertxt {
   font-size: 40px;
   color: #fc466b;
 }
 
-.bannerlogo{
+.bannerlogo {
   height: 44px;
   margin-bottom: 6px;
 }
 
-.modal-content{
+.modal-content {
   background-color: #eaeae8;
 }
 
-@media screen and (max-width:600px){
-  .cardHolder{
+@media screen and (max-width: 600px) {
+  .cardHolder {
     column-count: 2;
     column-gap: 5px;
   }
-  .dogcard{
+  .dogcard {
     margin: 3px 0px;
   }
-  .bannertxt{
+  .bannertxt {
     font-size: 20px;
   }
-  .bannerlogo{
+  .bannerlogo {
     height: 24px;
     margin-bottom: 4px;
   }
-  .doggyName{
+  .doggyName {
     font-size: 10px;
     padding: 3px 7px;
   }
