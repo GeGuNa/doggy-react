@@ -7,7 +7,7 @@ import Banner from './Banner';
 class Home extends Component {
 
     componentDidMount(){
-        this.props.getBreeds()
+        this.props.getBreeds();
     }
 
     render() {
