@@ -10,7 +10,7 @@ export default class PopUp extends Component {
       <React.Fragment>
           
                         <button data-toggle="modal" data-target={dogID} className="tooltip-test btn btn-sm" title="Enlarge Image" >
-                            <i className="fa fa-plus-circle plusBtn"></i>
+                            <i className="fa fa-plus-square plusBtn"></i>
                         </button>
           
         <div

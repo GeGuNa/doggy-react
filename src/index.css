@@ -21,21 +21,29 @@ body {
   padding: 5px 10px;
 }
 
+.txtPink{
+  color: #fc466b;
+}
+
 .plusBtn {
   color: #fc466b;
 }
 
 .downBtn {
+  color: #00ad42;
+}
+
+.moreBtn{
   color: #3f5efb;
 }
 
 .header {
-  background: linear-gradient(to right, #fc466b, #3f5efb);
+  background-color: #eaeae8;
 }
 
 .brandLogo {
   font-family: "Billabong", normal;
-  
+  text-shadow: 0px 0px 10px rgba(110, 110, 110, 0.493);
 }
 
 @font-face {
@@ -83,7 +91,11 @@ body {
     width: 70px;
     margin-right: 5px;
     margin-left: 5px;
+    margin-bottom: 10px;
     border: 2px solid #fc466b;
+  }
+  .storyContainer{
+    border-bottom: 2px solid #eaeae8;
   }
   .storyContainer::-webkit-scrollbar {
     display: none;

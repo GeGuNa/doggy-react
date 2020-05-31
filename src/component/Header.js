@@ -6,7 +6,7 @@ export default class Header extends Component {
         return (
             <div className="container-fluid p-2 header">
                 <div className="h3 m-0 text-center">
-                    <Link to="/" className="text-light text-decoration-none brandLogo">
+                    <Link to="/" className="text-dark text-decoration-none brandLogo">
                         Doggstagram
                     </Link>
                 </div>
