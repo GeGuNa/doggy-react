@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 // import axios from "axios";
 
+
 export default class PopUp extends Component {
+
+  
 
   render() {
       const {breed , imgUrl} = this.props;
@@ -30,6 +33,7 @@ export default class PopUp extends Component {
                     <img src={imgUrl} className="w-100" alt={breed} />
               </div>
               <div className="modal-footer">
+                
                 <button
                   type="button"
                   className="btn btn-light plusBtn"

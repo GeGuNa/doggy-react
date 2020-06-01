@@ -10,6 +10,11 @@ class Home extends Component {
         this.props.getBreeds();
     }
 
+    funFindSimilar = (breed) => {
+        console.log(breed);
+        this.props.history.push(`/similar/${breed}`);
+    };
+
     render() {
         return (
             <React.Fragment>
@@ -17,7 +22,7 @@ class Home extends Component {
                 <div className="py-2 cardHolder">
                     {
                         this.props.breeds.map((breed,i)=>(
-                            <DogCard key={i} breed={breed} />
+                            <DogCard key={i} breed={breed} funFindSimilar={this.funFindSimilar} />
                         ))
                     }
                 </div>
