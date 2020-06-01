@@ -29,7 +29,7 @@ export default class DogCard extends Component {
             <div className="dogcard">
                 
                 <div className="text-secondary doggyName my-1">
-                    <i class="fa fa-paw mr-2 text-dark"></i>
+                    <i className="fa fa-paw mr-2 text-dark"></i>
                     {breed.toUpperCase()}
                 </div>
                 <img src={this.state.dogImg} alt={breed} className="w-100" />

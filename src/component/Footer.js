@@ -6,9 +6,9 @@ export default class Footer extends Component {
             <div className="container-fluid py-2 header">
                 <div className="h5 text-dark m-0 text-right">
                     <span className="float-left">
-                        <i class="fa fa-paw txtPink"></i>
+                        <i className="fa fa-paw txtPink"></i>
                     </span>
-                    Doggstagram
+                    &copy; DOGGSTAGRAM
                 </div>
             </div>
         )
