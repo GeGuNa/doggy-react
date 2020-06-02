@@ -53,7 +53,7 @@ export default class DogCard extends Component {
               this.setBreed(breed);
             }}
           >
-            <i className="fa fa-paper-plane moreBtn"></i>
+            <i className="fa fa-info-circle moreBtn"></i>
           </button>
         </div>
       </div>

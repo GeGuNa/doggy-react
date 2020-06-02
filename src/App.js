@@ -13,7 +13,7 @@ export default class App extends Component {
       <Provider store={store}>
         <Router>
           <Header />
-          <div className="container-fluid p-2">
+          <div className="container-fluid main">
             <Route exact path="/" component={Home} />
             <Route exact path="/similar/:breed" component={Similar} />
           </div>

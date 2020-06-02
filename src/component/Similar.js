@@ -17,7 +17,7 @@ export default class Similar extends Component {
 
     funGetSimilar=()=>{
         const breed = this.props.match.params.breed;
-        axios.get('https://dog.ceo/api/breed/'+breed+'/images/random/12')
+        axios.get('https://dog.ceo/api/breed/'+breed+'/images/random/15')
         .then((res)=>{
             this.setState({imgList:res.data.message});
         })
@@ -27,11 +27,22 @@ export default class Similar extends Component {
     }
 
     render() {
+        const breed = this.props.match.params.breed;
         return (
             <div>
+                <div className="profileHolder py-3">
+                    <img src={this.state.imgList[0]} alt='profile' className="profileImg" />
+                    <span className="profileName text-dark">
+                        {breed.toUpperCase()} <i className="fa fa-check-circle text-primary"></i>
+                    </span>
+                </div>
+                <div className="row m-0 py-3">
                 {this.state.imgList.map((img,i)=>(
-                    <img src={img} key={i} alt={img} className="w-50"/>
+                    <div key={i} className="col-3 text-center similarHolder">
+                        <img src={img} alt={img} className="similarImg"/>
+                    </div>
                 ))}
+                </div>
             </div>
         )
     }
