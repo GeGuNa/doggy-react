@@ -19,6 +19,9 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Banner/>
+                <div className="mt-3 py-3 h5 text-center text-secondary">
+                    <i className="fa fa-paw txtPink"></i> Top Posts
+                </div>
                 <div className="py-2 cardHolder">
                     {
                         this.props.breeds.map((breed,i)=>(

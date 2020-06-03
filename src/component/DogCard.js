@@ -48,7 +48,7 @@ export default class DogCard extends Component {
           </a>
           <button
             className="btn btn-sm tooltip-test"
-            title="Find More Simlar Images"
+            title="Profile"
             onClick={() => {
               this.setBreed(breed);
             }}

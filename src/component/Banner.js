@@ -28,7 +28,7 @@ export default class Banner extends Component {
 
   render() {
     return (
-      <div className="my-3 pb-2 text-center storyContainer">
+      <div className="text-center storyContainer">
         {this.state.story.map((story, i) => (
           <Story story={story} key={i} />
         ))}
