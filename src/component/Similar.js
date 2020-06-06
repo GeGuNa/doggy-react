@@ -29,7 +29,7 @@ export default class Similar extends Component {
   render() {
     const breed = this.props.match.params.breed;
     return (
-      <div>
+      <div className="container">
         <div className="profileHolder py-4">
           <img
             src={this.state.imgList[0]}
@@ -40,9 +40,9 @@ export default class Similar extends Component {
             {breed.toUpperCase()} <i className="fa fa-paw text-primary"></i>
           </span>
         </div>
-        <div className="similarContainer py-3">
+        <div className="row py-3 mx-0">
           {this.state.imgList.map((img, i) => (
-            <div key={i} className="text-center similarHolder">
+            <div key={i} className="text-center p-1 col-4">
               <a
                 href={img}
                 className="tooltip-test"
